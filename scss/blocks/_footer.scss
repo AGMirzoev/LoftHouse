@@ -1,0 +1,44 @@
+.footer {
+	padding: 70px 0 50px;
+	background-color: $footer-bg;
+	font-size: 14px;
+	letter-spacing: 0.05rem;
+
+	@include mediaTable {
+		padding: 35px 0 25px;
+	}
+}
+.footer__grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 30px;
+
+	@include mediaTable {
+		grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+		gap: 40px 30px;
+	}
+}
+.footer__logo {
+	margin-top: -12px;
+}
+
+.footer-nav__list {
+	display: grid;
+	gap: 15px;
+}
+
+.footer-nav__link-bold {
+	color: $accent;
+	font-weight: 700;
+}
+
+.footer__address {
+	display: grid;
+	gap: 20px;
+}
+
+.socials__list {
+	display: flex;
+	column-gap: 22px;
+	align-items: center;
+}

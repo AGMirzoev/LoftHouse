@@ -1,0 +1,35 @@
+.header__info {
+	position: relative;
+	font-size: 18px;
+
+	&-map {
+		text-align: right;
+	}
+
+	&-map,
+	&-tel {
+		padding-left: 35px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 21px;
+			height: 21px;
+			background-repeat: no-repeat;
+		}
+	}
+
+	&-map::before {
+		background-image: url(./../image/header/placeholder.svg);
+	}
+
+	&-tel::before {
+		background-image: url(./../image/header/phone-call.svg);
+	}
+}
+
+.link-left {
+	text-align: right;
+}
